@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>sundayenhtml</title>
+</head>
+<body>
+	<canvas id="miLienzo"></canvas>
+</body>
+<script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script>
+<script>
+	var codigoDePrograma=function(instanciaProcessing){
+		with (instanciaProcessing){
+			size(400,400);
+			frameRate(30);
+			//pegar codigo de khan academi aqui:
+			background(0, 255, 238);
+			// The ground
+
+			fill(107, 25, 25);
+			rect(0, 300, 400, 100);  
+			// The sun
+			fill(255, 166, 0);
+			ellipse(80, 64, 100, 100);
+
+			fill(255, 255, 255);
+			// The snowman
+			ellipse(200, 300, 150, 150);
+			ellipse(200, 200, 100, 100);
+			ellipse(200, 120, 75, 75);
+
+
+
+		}
+	};
+
+	var canvas=document.getElementById("miLienzo");
+	var instanc = new Processing(canvas, codigoDePrograma);
+</script>
+</html>

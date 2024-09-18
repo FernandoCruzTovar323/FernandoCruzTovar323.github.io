@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>bunnyenhtml</title>
+</head>
+<body>
+	<canvas id="miLienzo"></canvas>
+</body>
+<script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script>
+<script>
+	var codigoDePrograma=function(instanciaProcessing){
+		with (instanciaProcessing){
+			size(400,400);
+			frameRate(30);
+			//pegar codigo de khan academi aqui:
+			var tamañoojos=59;  
+			var altDientes=53;
+			ellipse(150, 70, 60, 120);  // left ear
+			ellipse(240, 70, 60, 120);  // right ear
+
+			ellipse(200, 170, 150, 150);    // face
+
+			fill(0, 0, 0);
+			ellipse(170, 150, tamañoojos, tamañoojos);  // left eye
+			ellipse(230, 150, tamañoojos, tamañoojos);  // right eye
+
+			line(150, 200, 250, 200);   // mouth
+
+			noFill();
+			rect(185, 200, 15, altDientes); // left tooth
+			rect(200, 200, 15, altDientes); // right tooth
+
+
+		}
+	};
+
+	var canvas=document.getElementById("miLienzo");
+	var instanc = new Processing(canvas, codigoDePrograma);
+</script>
+</html>

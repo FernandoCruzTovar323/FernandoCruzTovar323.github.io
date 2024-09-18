@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>dinnerenhtml</title>
+</head>
+<body>
+	<canvas id="miLienzo"></canvas>
+</body>
+<script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script>
+<script>
+	var codigoDePrograma=function(instanciaProcessing){
+		with (instanciaProcessing){
+			size(400,400);
+			frameRate(30);
+			//pegar codigo de khan academi aqui:
+			background(186, 145, 20); // wooden table
+			ellipse(200, 200, 350, 350); // plate
+			ellipse(200, 200, 300, 300); 
+
+			//eggs
+			ellipse(166, 96, 154, 112); 
+			ellipse(289, 124, 109, 148); 
+			fill(255, 247, 0);
+			ellipse(162, 95, 68, 58); 
+			ellipse(291, 119, 68, 58); 
+
+
+			//beans
+			fill(105, 0, 0);
+			ellipse(153, 241, 111, 85);
+
+			ellipse(122, 209, 14, 25);
+			ellipse(134, 201, 14, 25);
+			ellipse(148, 201, 14, 25);
+			ellipse(164, 201, 14, 25);
+			ellipse(179, 201, 14, 25);
+			ellipse(195, 207, 14, 25);
+
+			ellipse(110, 230, 14, 25);
+			ellipse(122, 230, 14, 25);
+			ellipse(134, 222, 14, 25);
+			ellipse(148, 221, 14, 25);
+			ellipse(164, 221, 14, 25);
+			ellipse(179, 221, 14, 25);
+			ellipse(195, 227, 14, 25);
+
+			ellipse(110, 248, 14, 25);
+			ellipse(122, 251, 14, 25);
+			ellipse(134, 247, 14, 25);
+			ellipse(148, 244, 14, 25);
+			ellipse(164, 244, 14, 25);
+			ellipse(179, 242, 14, 25);
+			ellipse(195, 243, 14, 25);
+
+			ellipse(110, 260, 14, 25);
+			ellipse(122, 271, 14, 25);
+			ellipse(134, 272, 14, 25);
+			ellipse(148, 269, 14, 25);
+			ellipse(164, 269, 14, 25);
+			ellipse(179, 265, 14, 25);
+			ellipse(195, 262, 14, 25);
+
+			//tortilla
+			fill(255, 209, 71);
+			ellipse(68, 200, 151, 132);
+			ellipse(46, 131, 151, 132);
+			ellipse(87, 238, 151, 132);
+			ellipse(35, 291, 151, 132);
+			//pierna de pollo
+			noStroke();
+			pushMatrix(); // Guardar la transformación actual
+			rotate(radians(-30)); // Rotar -30 grados
+			ellipse(51, 354, 118, 90);
+			rect(77, 341, 111, 29);
+			ellipse(195, 338, 49, 44);
+			ellipse(195, 369, 49, 44);
+			popMatrix(); // Restaurar la transformación original
+
+		}
+	};
+
+	var canvas=document.getElementById("miLienzo");
+	var instanc = new Processing(canvas, codigoDePrograma);
+</script>
+</html>

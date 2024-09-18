@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>snowmanenhtml</title>
+</head>
+<body>
+	<canvas id="miLienzo"></canvas>
+</body>
+<script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script>
+<script>
+	var codigoDePrograma=function(instanciaProcessing){
+		with (instanciaProcessing){
+			size(400,400);
+			frameRate(30);
+			//pegar codigo de khan academi aqui:
+			rect(2,367,396,75);
+			ellipse(200, 300, 150, 150);
+			ellipse(200, 200, 100, 100);
+			ellipse(200, 120, 75, 75);
+			line(157,200,100,122);
+			line(322,129,232,195);
+
+		}
+	};
+
+	var canvas=document.getElementById("miLienzo");
+	var instanc = new Processing(canvas, codigoDePrograma);
+</script>
+</html>
